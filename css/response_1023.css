@@ -1,0 +1,684 @@
+@media print,
+(max-width: 1023px)
+{
+    /*-------------------
+        Global styles
+    -------------------*/
+    :root
+    {
+        --font_size_title: 32px;
+        --font_size_title_small: 28px;
+    }
+
+
+
+    /*--------------
+        Fancybox
+    --------------*/
+    .fancybox__slide
+    {
+        padding: 24px;
+    }
+
+
+
+    /*----------------
+        Pagination
+    ----------------*/
+    .pagination .links
+    {
+        gap: 12px;
+    }
+
+
+    .pagination .links a,
+    .pagination .links .sep
+    {
+        font-size: 16px;
+
+        width: 36px;
+        height: 36px;
+    }
+
+
+    .pagination .links a.prev .icon,
+    .pagination .links a.next .icon
+    {
+        width: 36px;
+        height: 36px;
+    }
+
+
+
+    /*---------------
+        Accordion
+    ---------------*/
+    .accordion_item + .accordion_item
+    {
+        margin-top: 24px;
+    }
+
+
+    .accordion_item .head .title
+    {
+        font-size: 24px;
+
+        width: calc(100% - 40px);
+    }
+
+
+    .accordion_item .head .icon
+    {
+        width: 17px;
+        height: 10px;
+    }
+
+
+
+    /*------------
+        Header
+    ------------*/
+    header
+    {
+        position: fixed;
+        z-index: 101;
+        top: 0;
+        right: 100%;
+        left: auto;
+
+        width: 325px;
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        margin: 0;
+        padding: 0;
+
+        transition: transform .3s linear;
+
+        background: #fff;
+    }
+
+    header.show
+    {
+        transform: translateX(100%);
+    }
+
+
+    header .scroll
+    {
+        display: flex;
+        overflow: auto;
+        flex-direction: column;
+
+        height: 100%;
+        min-height: -moz-available;
+        min-height: -webkit-fill-available;
+        min-height:         fill-available;
+        padding: 20px 0;
+
+        overscroll-behavior-y: contain;
+    }
+
+
+    header .data
+    {
+        order: 2;
+
+        margin-top: 32px;
+        padding: 0;
+        padding-top: 32px;
+
+        border-top: 1px solid #aa9580;
+    }
+
+
+    header .logo,
+    header .search,
+    header .icons_links,
+    header .categories
+    {
+        display: none;
+    }
+
+
+    header .center
+    {
+        width: 100%;
+    }
+
+
+    header .links
+    {
+        position: relative;
+        bottom: 0;
+        left: 0;
+
+        display: flex;
+        align-content: flex-start;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        width: 100%;
+
+        transform: none;
+
+        gap: 10px;
+    }
+
+
+    header .catalog
+    {
+        width: 100%;
+    }
+
+
+    header .catalog .btn
+    {
+        height: 50px;
+
+        border-radius: 5px;
+    }
+
+
+    header .mob_categories
+    {
+        display: flex;
+    }
+
+
+
+    /*-----------------
+        Mob. header
+    -----------------*/
+    .mob_header
+    {
+        display: block;
+    }
+
+
+
+    /*---------------
+        Page head
+    ---------------*/
+    * + .page_title
+    {
+        margin-top: 20px;
+    }
+
+
+
+    /*----------------
+        Typography
+    ----------------*/
+    .text_block .columns
+    {
+        column-gap: 0;
+        column-count: 1;
+    }
+
+
+    .text_block blockquote,
+    .text_block q
+    {
+        font-size: 22px;
+
+        margin-top: 48px;
+        margin-bottom: 48px;
+        padding-top: 20px;
+        padding-left: 32px;
+    }
+
+
+    .text_block .image_block
+    {
+        margin-top: 48px;
+        margin-bottom: 48px;
+    }
+
+
+    .text_block ul li:before
+    {
+        top: 8px;
+    }
+
+
+    .text_block ol li:before
+    {
+        top: 5px;
+    }
+
+
+    .text_block .table_wrap
+    {
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin-right: -24px;
+        margin-left: -24px;
+        padding: 0 24px;
+    }
+
+
+    .text_block table
+    {
+        width: 1024px;
+    }
+
+
+
+    /*-----------------
+        Main slider
+    -----------------*/
+    .main_slider .cont
+    {
+        align-content: flex-start;
+        align-items: flex-start;
+
+        min-height: 550px;
+    }
+
+
+    .main_slider .title
+    {
+        font-size: 100px;
+
+        margin: 0 -8px;
+    }
+
+
+    .main_slider .img
+    {
+        top: auto;
+        right: -28%;
+        bottom: -8%;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*--------------------
+        Default slider
+    --------------------*/
+    .default_slider .cont
+    {
+        min-height: 550px;
+    }
+
+
+    .default_slider .title
+    {
+        font-size: 100px;
+
+        margin: 0 -8px;
+    }
+
+
+    .default_slider .img
+    {
+        top: auto;
+        right: -28%;
+        bottom: -8%;
+
+        width: 100%;
+        height: auto;
+    }
+
+
+
+    /*----------------
+        About info
+    ----------------*/
+    .about_info .image
+    {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+
+
+    .about_info .text_block
+    {
+        width: 100%;
+    }
+
+
+
+    /*----------------
+        Advantages
+    ----------------*/
+    .advantages .bg_circle
+    {
+        display: none;
+    }
+
+
+    .advantages .row
+    {
+        gap: 24px;
+    }
+
+
+    .advantages .item
+    {
+        width: calc(50% - 12px);
+    }
+
+
+    .advantages .item:nth-child(4)
+    {
+        margin-left: 0;
+    }
+
+
+    .advantages .item:nth-child(5)
+    {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+
+    .advantages .item .name
+    {
+        font-size: 22px;
+    }
+
+
+
+    /*--------------
+        Articles
+    --------------*/
+    .articles .grid.inline
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .articles .grid.inline::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .articles .grid.inline::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .articles .grid.inline > *
+    {
+        display: inline-block;
+
+        width: 272px;
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+        white-space: normal;
+
+        scroll-snap-align: start;
+    }
+
+
+    .articles .grid.inline > * + *
+    {
+        margin-left: 20px;
+    }
+
+
+    .articles .article .name
+    {
+        line-height: 21px;
+    }
+
+
+
+    /*------------------
+        Action block
+    ------------------*/
+    .action_block .form
+    {
+        width: 100%;
+    }
+
+
+    .action_block .images
+    {
+        display: none;
+    }
+
+
+
+    /*-------------------
+        Category info
+    -------------------*/
+    .category_info .sub_categories .row
+    {
+        display: block;
+        overflow: auto;
+
+        width: calc(100% + 48px);
+        margin: 0 -24px;
+        padding: 0 24px;
+
+        white-space: nowrap;
+
+        scroll-padding: 0 24px;
+        scroll-snap-type: x mandatory;
+        scrollbar-color: transparent transparent !important;
+        scrollbar-width: thin !important;
+    }
+
+
+    .category_info .sub_categories .row::-webkit-scrollbar
+    {
+        display: none !important;
+
+        width: 0 !important;
+        height: 0 !important;
+
+        background-color: transparent !important;
+    }
+
+    .category_info .sub_categories .row::-webkit-scrollbar-thumb
+    {
+        background-color: transparent !important;
+    }
+
+
+    .category_info .sub_categories .row > *
+    {
+        display: inline-block;
+
+        max-width: none;
+        margin: 0;
+
+        vertical-align: top;
+
+        scroll-snap-align: start;
+    }
+
+
+    .category_info .sub_categories .row > * + *
+    {
+        margin-left: 4px;
+    }
+
+
+
+    /*--------------
+        Products
+    --------------*/
+    .products .grid > *,
+    .content .products .grid > *
+    {
+        width: calc(50% - 24px);
+    }
+
+
+
+    /*------------------
+        Product info
+    ------------------*/
+    .product_info .images
+    {
+        padding-left: 102px;
+    }
+
+
+    .product_info .images .stickers
+    {
+        left: 114px;
+    }
+
+
+    .product_info .images .thumbs
+    {
+        top: 20px;
+
+        width: 88px;
+        height: calc(100% - 40px);
+    }
+
+
+    .product_info .images .thumbs .swiper-slide,
+    .product_info .images .thumbs .image
+    {
+        height: 88px;
+    }
+
+
+    .product_info .images .big .image
+    {
+        height: 540px;
+    }
+
+
+
+    /*-----------
+        Files
+    -----------*/
+    .files .section + .section
+    {
+        margin-top: 28px;
+        padding-top: 27px;
+    }
+
+
+
+    /*---------------
+        Cart info
+    ---------------*/
+    .cart_info .product .thumb
+    {
+        width: 120px;
+        height: 120px;
+    }
+
+
+    .cart_info .product .info
+    {
+        width: calc(100% - 140px);
+        margin-bottom: 20px;
+        margin-left: auto;
+        padding-right: 50px;
+    }
+
+
+    .cart_info .product .price:not(.total)
+    {
+        margin-left: 140px;
+    }
+
+
+    .cart_info .product .price,
+    .cart_info .product .price.total
+    {
+        width: 160px;
+    }
+
+
+    .cart_info .product .delete
+    {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+
+
+    /*-------------------
+        Checkout info
+    -------------------*/
+    .checkout_info .form .type label div
+    {
+        height: 48px;
+    }
+
+
+
+    /*------------
+        Orders
+    ------------*/
+    .orders .order .cart_info .product .info
+    {
+        width: calc(100% - 140px);
+        padding-right: 0;
+    }
+
+
+
+    /*-----------
+        Steps
+    -----------*/
+    .steps .row > *
+    {
+        width: calc(50% - 48px);
+    }
+
+
+
+    /*-------------------
+        Contacts info
+    -------------------*/
+    .contacts_info .cont
+    {
+        min-height: 440px;
+    }
+
+
+    .contacts_info .data
+    {
+        width: 320px;
+        padding: 28px 24px;
+    }
+
+
+
+    /*------------
+        Footer
+    ------------*/
+    footer .links
+    {
+        display: none;
+    }
+}

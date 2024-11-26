@@ -1,0 +1,13 @@
+<svg 
+ xmlns="http://www.w3.org/2000/svg"
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ width="441.5px" height="441.5px">
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M220.500,150.500 C259.160,150.500 290.500,181.840 290.500,220.500 C290.500,259.160 259.160,290.500 220.500,290.500 C181.840,290.500 150.500,259.160 150.500,220.500 C150.500,181.840 181.840,150.500 220.500,150.500 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M220.500,100.500 C286.774,100.500 340.500,154.225 340.500,220.500 C340.500,286.774 286.774,340.500 220.500,340.500 C154.226,340.500 100.500,286.774 100.500,220.500 C100.500,154.225 154.226,100.500 220.500,100.500 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M220.500,50.500 C314.388,50.500 390.500,126.611 390.500,220.500 C390.500,314.388 314.388,390.500 220.500,390.500 C126.612,390.500 50.500,314.388 50.500,220.500 C50.500,126.611 126.612,50.500 220.500,50.500 Z"/>
+<path fill-rule="evenodd"  stroke="rgb(255, 255, 255)" stroke-width="1px" stroke-linecap="round" stroke-linejoin="round" fill="none"
+ d="M220.500,0.500 C342.003,0.500 440.500,98.997 440.500,220.500 C440.500,342.003 342.003,440.500 220.500,440.500 C98.997,440.500 0.500,342.003 0.500,220.500 C0.500,98.997 98.997,0.500 220.500,0.500 Z"/>
+</svg>
