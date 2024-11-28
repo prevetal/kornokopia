@@ -57,6 +57,7 @@
 
 
     .mob_header .icons_links a,
+    .mob_header .icons_links button,
     .mob_header .mob_menu_btn
     {
         min-width: 44px;
@@ -819,5 +820,45 @@
     footer .contacts
     {
         width: calc(50% - 10px);
+    }
+
+
+
+    /*-----------
+        PopUp
+    -----------*/
+    .modal
+    {
+        padding: 40px;
+    }
+
+
+    .modal_title
+    {
+        line-height: calc(100% + 8px);
+    }
+
+
+    .modal .form
+    {
+        margin-top: 24px;
+    }
+
+
+    .modal .form .submit_btn
+    {
+        width: auto;
+    }
+
+
+    .modal .register_btn
+    {
+        height: 50px;
+    }
+
+
+    .modal .recovery_btn
+    {
+        margin-top: 20px;
     }
 }

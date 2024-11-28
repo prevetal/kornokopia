@@ -232,7 +232,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	}
 
 	Fancybox.defaults.tpl = {
-		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_close"></use></svg></button>',
+		closeButton: '<button data-fancybox-close class="f-button is-close-btn" title="{{CLOSE}}"><svg><use xlink:href="images/sprite.svg#ic_delete"></use></svg></button>',
 
 		main: `<div class="fancybox__container" role="dialog" aria-modal="true" aria-label="{{MODAL}}" tabindex="-1">
 			<div class="fancybox__backdrop"></div>

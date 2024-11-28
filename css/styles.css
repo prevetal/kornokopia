@@ -361,39 +361,24 @@ button
 }
 
 
-.fancybox__content > .f-button.is-close-btn
+.fancybox__content > .f-button.is-close-btn,
+.is-compact .fancybox__content > .f-button.is-close-btn
 {
-    top: 0;
-    right: 0;
+    top: 17px;
+    right: 17px;
 
     opacity: 1;
 
-    --f-button-width: 34px;
-    --f-button-height: 34px;
-    --f-button-border-radius: 0;
-    --f-button-color: var(--text_color);
-    --f-button-hover-color: var(--text_color);
-    --f-button-svg-width: 14px;
-    --f-button-svg-height: 14px;
+    --f-button-width: 36px;
+    --f-button-height: 36px;
+    --f-button-border-radius: 50%;
+    --f-button-color: #aa9580;
+    --f-button-hover-color: #536451;
+    --f-button-svg-width: 30px;
+    --f-button-svg-height: 30px;
     --f-button-bg: transparent;
-    --f-button-hover-bg: transparent;
-    --f-button-active-bg: transparent;
-}
-
-.is-compact .fancybox__content > .f-button.is-close-btn
-{
-    top: 0;
-    right: 0;
-
-    --f-button-border-radius: 0;
-    --f-button-color: var(--text_color);
-    --f-button-hover-color: var(--text_color);
-    --f-button-outline-color: none;
-    --f-button-bg: none;
-    --f-button-active-bg: none;
-    --f-button-hover-bg: none;
-    --f-button-svg-width: 14px;
-    --f-button-svg-height: 14px;
+    --f-button-hover-bg: #e1f10d;
+    --f-button-active-bg: #e1f10d;
 }
 
 
@@ -1051,7 +1036,8 @@ header .icons_links
 }
 
 
-header .icons_links a
+header .icons_links a,
+header .icons_links button
 {
     font-size: 14px;
     font-weight: 500;
@@ -1099,7 +1085,9 @@ header .icons_links .cart .icon
 
 
 header .icons_links a:hover,
-header .icons_links a.active
+header .icons_links a.active,
+header .icons_links button:hover,
+header .icons_links button.active
 {
     background: #e1f10d;
 }
@@ -1308,7 +1296,8 @@ header .mob_categories a.active
 }
 
 
-.mob_header .icons_links a
+.mob_header .icons_links a,
+.mob_header .icons_links button
 {
     font-size: 13px;
     font-weight: 500;
@@ -1356,7 +1345,9 @@ header .mob_categories a.active
 
 
 .mob_header .icons_links a:hover,
-.mob_header .icons_links a.active
+.mob_header .icons_links a.active,
+.mob_header .icons_links button:hover,
+.mob_header .icons_links button.active
 {
     background: #e1f10d;
 }
@@ -7031,29 +7022,71 @@ footer .socials a:hover
     display: none;
     visibility: visible !important;
 
-    width: 480px;
+    width: 560px;
     max-width: 100%;
-    padding: 40px 50px;
+    padding: 40px 80px;
 
     color: var(--text_color);
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 10px;
+    background-color: rgb(250, 247, 239);
 }
 
 
 .modal_title
 {
-    font-size: var(--font_size_title);
-    font-weight: 700;
-    line-height: normal;
-
-    text-align: center;
+    font-size: var(--font_size_title_small);
+    font-weight: 400;
+    line-height: calc(100% + 10px);
 }
 
 
-.modal_desc
+.modal .form
 {
-    margin-top: 24px;
+    margin-top: 30px;
+}
 
-    text-align: center;
+
+.modal .submit
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+
+.modal .register_btn
+{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+
+    height: 56px;
+    margin-left: 20px;
+    padding: 0 24px;
+
+    transition: .2s linear;
+    text-transform: uppercase;
+
+    color: #536451;
+    border-radius: 5px;
+    background: #e1f10d;
+}
+
+
+.modal .register_btn:hover
+{
+    color: #e1f10d;
+    background: #536451;
+}
+
+
+.modal .recovery_btn
+{
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+
+    margin-top: 30px;
 }

@@ -91,7 +91,8 @@
     }
 
 
-    header .icons_links a
+    header .icons_links a,
+    header .icons_links button
     {
         line-height: 20px;
 
