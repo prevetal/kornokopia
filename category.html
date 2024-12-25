@@ -680,7 +680,7 @@
 												186 429 <span>руб.</span>
 											</div>
 
-											<button class="request_btn">
+											<button class="request_btn modal_btn" data-modal="order_modal">
 												<svg class="icon"><use xlink:href="images/sprite.svg#ic_message"></use></svg>
 
 												<svg class="icon active"><use xlink:href="images/sprite.svg#ic_message"></use></svg>
@@ -1492,6 +1492,59 @@
 
 			<div class="overlay"></div>
 		</div>
+
+
+		<section class="modal" id="order_modal">
+			<div class="modal_title">Оставить заявку</div>
+
+			<form action="" class="form">
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input">
+
+						<!-- <input type="text" name="" value="" class="input error"> -->
+
+						<!-- <div class="error_text">Необходимо указать имя</div> -->
+
+						<div class="label">Ваше имя</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<input type="text" name="" value="" class="input">
+
+						<div class="label">Телефон или e-mail</div>
+					</div>
+				</div>
+
+				<div class="line">
+					<div class="field">
+						<textarea name=""></textarea>
+
+						<div class="label">Сообщение или вопрос</div>
+					</div>
+				</div>
+
+				<div class="line agree">
+					<div class="field">
+						<label class="checkbox">
+							<input type="checkbox" name="agree">
+
+							<div class="check">
+								<svg class="icon"><use xlink:href="images/sprite.svg#ic_check"></use></svg>
+							</div>
+
+							<div>Соглашаюсь на обработку моих  персональных  данных и принимаю <a href="/" target="_blank">политику конфиденциальности</a>.</div>
+						</label>
+					</div>
+				</div>
+
+				<div class="submit">
+					<button type="submit" class="submit_btn">ОТПРАВИТЬ</button>
+				</div>
+			</form>
+		</section>
 
 
 		<section class="modal" id="login_modal">
